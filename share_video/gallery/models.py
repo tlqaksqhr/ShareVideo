@@ -4,3 +4,6 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     link = models.TextField()
     desc = models.TextField()
+
+class Comment(models.Model):
+    desc = models.TextField()
