@@ -5,8 +5,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     link = models.TextField()
     desc = models.TextField()
-    writer = models.ForeignKey(User, on_delete=models.CASCADE)
+    writer = models.ForeignKey(User, related_name='posts')
 
 class Comment(models.Model):
     desc = models.TextField()
-    writer = models.ForeignKey(User, on_delete=models.CASCADE)
+    writer = models.ForeignKey(User, related_name='comments')
