@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Post(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.TextField()
     link = models.TextField()
     desc = models.TextField()
     write_date = models.DateField()
