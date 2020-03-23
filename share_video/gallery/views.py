@@ -17,6 +17,9 @@ def video_upload(request):
 def video_modify(request):
     return HttpResponse("Video Modify")
 
+def video_remove(request):
+    return HttpResponse("Video Remove")
+
 def add_comment(request):
     return HttpResponse("Add Comment")
 
